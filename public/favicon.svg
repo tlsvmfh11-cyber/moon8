@@ -1,0 +1,6 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="32" cy="32" r="32" fill="#050505" />
+  <circle cx="32" cy="32" r="30" stroke="#d4af37" stroke-width="2" />
+  <path d="M32 16L37 28H27L32 16Z" fill="#d4af37" />
+  <text x="32" y="48" font-family="serif" font-size="20" fill="#d4af37" text-anchor="middle" font-weight="bold">D</text>
+</svg>
