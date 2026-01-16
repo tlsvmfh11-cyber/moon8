@@ -1,16 +1,23 @@
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 export default function Hero() {
+  const containerRef = useRef(null);
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 1000], [0, 500]);
+
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-executive-black/60 via-executive-black/40 to-executive-black z-10" />
-        <img 
-          src="/images/hero.jpg" 
-          alt="Executive Lounge" 
-          className="w-full h-full object-cover object-center animate-[scale-in_20s_ease-out_infinite_alternate]" 
-        />
+    <section ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Parallax Background */}
+      <div className="absolute inset-0 z-0 h-[120%] -top-[10%]">
+        <motion.div style={{ y }} className="w-full h-full">
+            <div className="absolute inset-0 bg-gradient-to-b from-executive-black/60 via-executive-black/40 to-executive-black z-10" />
+            <img 
+              src="/images/hero.jpg" 
+              alt="Executive Lounge" 
+              className="w-full h-full object-cover object-center" 
+            />
+        </motion.div>
       </div>
 
       <div className="relative z-20 text-center px-6 max-w-5xl mx-auto">

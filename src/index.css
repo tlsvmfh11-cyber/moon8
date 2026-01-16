@@ -1,62 +1,23 @@
 @import "tailwindcss";
 
-/* 이사만루체 - Light (300) */
+/* S-Core Dream Font Apply */
 @font-face {
-  font-family: 'Esamanru';
-  src: url('/fonts/esamanru-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'S-CoreDream';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
 }
-
-/* 이사만루체 - Medium (400, 500) */
 @font-face {
-  font-family: 'Esamanru';
-  src: url('/fonts/esamanru-Medium.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'S-CoreDream';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }
-
 @font-face {
-  font-family: 'Esamanru';
-  src: url('/fonts/esamanru-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* 이사만루체 - Bold (600, 700, 800, 900) */
-@font-face {
-  font-family: 'Esamanru';
-  src: url('/fonts/esamanru-Bold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Esamanru';
-  src: url('/fonts/esamanru-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Esamanru';
-  src: url('/fonts/esamanru-Bold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Esamanru';
-  src: url('/fonts/esamanru-Bold.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'S-CoreDream';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
 }
 
 @theme {
@@ -69,9 +30,9 @@
   --color-gold-500: #c5a028;
   --color-gold-600: #b08d20;
   
-  --font-serif: 'Esamanru', sans-serif;
-  --font-sans: 'Esamanru', sans-serif;
-  --font-script: 'Esamanru', sans-serif;
+  --font-serif: 'S-CoreDream', serif;
+  --font-sans: 'S-CoreDream', sans-serif;
+  --font-script: 'Dancing Script', cursive;
 
   --animate-fade-in: fadeIn 0.8s ease-out forwards;
   --animate-slide-up: slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
