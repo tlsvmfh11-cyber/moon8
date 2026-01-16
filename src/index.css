@@ -1,5 +1,63 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Pretendard:wght@100..900&family=Dancing+Script:wght@400;700&display=swap');
+
+/* 이사만루체 - Light (300) */
+@font-face {
+  font-family: 'Esamanru';
+  src: url('/fonts/esamanru-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 이사만루체 - Medium (400, 500) */
+@font-face {
+  font-family: 'Esamanru';
+  src: url('/fonts/esamanru-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Esamanru';
+  src: url('/fonts/esamanru-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 이사만루체 - Bold (600, 700, 800, 900) */
+@font-face {
+  font-family: 'Esamanru';
+  src: url('/fonts/esamanru-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Esamanru';
+  src: url('/fonts/esamanru-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Esamanru';
+  src: url('/fonts/esamanru-Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Esamanru';
+  src: url('/fonts/esamanru-Bold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme {
   /* Executive Gold Palette */
@@ -11,9 +69,9 @@
   --color-gold-500: #c5a028;
   --color-gold-600: #b08d20;
   
-  --font-serif: 'Playfair Display', serif;
-  --font-sans: 'Pretendard', sans-serif;
-  --font-script: 'Dancing Script', cursive;
+  --font-serif: 'Esamanru', sans-serif;
+  --font-sans: 'Esamanru', sans-serif;
+  --font-script: 'Esamanru', sans-serif;
 
   --animate-fade-in: fadeIn 0.8s ease-out forwards;
   --animate-slide-up: slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
